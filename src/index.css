@@ -10,9 +10,9 @@ body {
   --middle-grey: #96897bff;
   --white: #fefffeff;
   --medium-aquamarine: #61d095ff;
+  background-color: var(--ksu-purple);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body > * {
+  box-sizing: border-box;
 }

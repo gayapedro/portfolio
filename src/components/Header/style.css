@@ -1,0 +1,24 @@
+.header-container {
+  background-color: var(--ksu-purple);
+  color: var(--white);
+  height: calc(100vh - 2 * 40px);
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 40px;
+  font-size: 70px;
+  position: relative;
+}
+
+.header-container h1 {
+  margin: 0 0 50px 0;
+  font-weight: 700;
+}
+
+.header-container span.typed {
+  font-size: 40px;
+}
+
+.languages {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
