@@ -1,12 +1,15 @@
 import './style.css';
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import BrazilFlag from '../../assets/flag-br.svg';
-import USFlag from '../../assets/flag-us.svg';
+import { CircleFlag } from 'react-circle-flags';
 
 function Header() {
   const typedElement = useRef(null);
   const typedInstance = useRef(null);
+
+  const handleLanguage = (language) => {
+    console.log(`Language changed to ${language}`);
+  };
 
   useEffect(() => {
     const options = {
@@ -16,8 +19,8 @@ function Header() {
         'Eu sou um Desenvolvedor Full Stack',
       ],
       smartBackspace: true,
-      typeSpeed: 50,
-      backSpeed: 25,
+      typeSpeed: 40,
+      backSpeed: 70,
       loop: true,
       loopCount: Infinity,
     };
@@ -34,8 +37,21 @@ function Header() {
         eu sou o<br />
         Pedro.
       </h1>
-      <span className='typed' ref={typedElement}></span>
-      <div className='languages'></div>
+      <div className='typed-container'>
+        <span className='typed' ref={typedElement}></span>
+      </div>
+      <div className='languages'>
+        <CircleFlag
+          onClick={() => handleLanguage('br')}
+          countryCode='br'
+          height='35'
+        />
+        <CircleFlag
+          onClick={() => handleLanguage('us')}
+          countryCode='us'
+          height='35'
+        />
+      </div>
     </div>
   );
 }
