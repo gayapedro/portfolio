@@ -13,14 +13,9 @@ function Header() {
 
   useEffect(() => {
     const options = {
-      strings: [
-        'Eu sou um Desenvolvedor Front-end',
-        'Eu sou um Desenvolvedor Back-end',
-        'Eu sou um Desenvolvedor Full Stack',
-      ],
-      smartBackspace: true,
-      typeSpeed: 40,
-      backSpeed: 70,
+      strings: ['Front-end', 'Back-end', 'Full Stack'],
+      typeSpeed: 100,
+      backSpeed: 90,
       loop: true,
       loopCount: Infinity,
     };
@@ -38,6 +33,7 @@ function Header() {
         Pedro.
       </h1>
       <div className='typed-container'>
+        {'Eu sou um Desenvolvedor'}
         <span className='typed' ref={typedElement}></span>
       </div>
       <div className='languages'>

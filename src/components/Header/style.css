@@ -19,6 +19,9 @@
 .typed-container {
   width: 680px;
   align-self: flex-end;
+  display: flex;
+  gap: 10px;
+  font-size: 40px;
 }
 
 .typed-container span.typed {
