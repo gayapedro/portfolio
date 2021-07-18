@@ -1,10 +1,8 @@
 .header-container {
-  background-color: var(--ksu-purple);
   color: var(--white);
+  font-size: 75px;
   height: calc(100vh - 2 * 40px);
-  font-family: 'Josefin Sans', sans-serif;
   padding: 40px;
-  font-size: 70px;
   position: relative;
   display: flex;
   flex-direction: column;
