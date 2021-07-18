@@ -1,0 +1,32 @@
+.about-container {
+  padding: 40px;
+}
+
+.about-container h1 {
+  font-size: 60px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.about-info {
+  display: flex;
+  gap: 50px;
+  width: 70%;
+  margin-left: 100px;
+}
+
+.about-info img {
+  width: 200px;
+  border-radius: 25px;
+  border: 2px solid var(--medium-aquamarine);
+  box-shadow: rgba(97, 208, 149, 0.4) -5px 5px,
+    rgba(97, 208, 149, 0.3) -10px 10px, rgba(97, 208, 149, 0.2) -15px 15px,
+    rgba(97, 208, 149, 0.1) -20px 20px, rgba(97, 208, 149, 0.05) -25px 25px;
+}
+
+.about-info p {
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 400;
+  text-align: justify;
+}

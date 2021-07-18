@@ -20,6 +20,8 @@
   display: flex;
   gap: 10px;
   font-size: 40px;
+  margin-right: 60px;
+  height: 40px;
 }
 
 .typed-container span.typed {
