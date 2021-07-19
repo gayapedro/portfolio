@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faInfoCircle,
   faUserGraduate,
+  faLaptopCode,
+  faPaperPlane,
 } from '@fortawesome/free-solid-svg-icons';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 function SideBar() {
   return (
@@ -14,6 +16,12 @@ function SideBar() {
       </Link>
       <Link to='education' smooth>
         <FontAwesomeIcon icon={faUserGraduate} size='2x' />
+      </Link>
+      <Link to='education' smooth>
+        <FontAwesomeIcon icon={faLaptopCode} size='2x' />
+      </Link>
+      <Link to='education' smooth>
+        <FontAwesomeIcon icon={faPaperPlane} size='2x' />
       </Link>
     </div>
   );
