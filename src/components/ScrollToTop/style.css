@@ -1,0 +1,15 @@
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+}
+
+.scroll-top > * {
+  color: var(--darker-ksu-purple);
+  cursor: pointer;
+  z-index: 5;
+}
+
+.scroll-top > *:hover {
+  transform: scale(1.2);
+}
