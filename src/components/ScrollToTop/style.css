@@ -5,11 +5,13 @@
 }
 
 .scroll-top > * {
-  color: var(--darker-ksu-purple);
+  color: var(--white);
+  opacity: 0.3;
   cursor: pointer;
   z-index: 5;
 }
 
 .scroll-top > *:hover {
   transform: scale(1.2);
+  opacity: 1;
 }

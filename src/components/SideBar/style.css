@@ -11,10 +11,12 @@
 }
 
 .sidebar > * {
-  color: var(--darker-ksu-purple);
+  color: var(--white);
+  opacity: 0.3;
   cursor: pointer;
 }
 
 .sidebar > *:hover {
   transform: scale(1.2);
+  opacity: 1;
 }
