@@ -14,6 +14,7 @@ function Header() {
   useEffect(() => {
     const options = {
       strings: ['Front-end', 'Back-end', 'Full Stack'],
+      smartBackspace: true,
       typeSpeed: 100,
       backSpeed: 90,
       loop: true,

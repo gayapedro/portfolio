@@ -1,0 +1,17 @@
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+}
+
+.scroll-top > * {
+  color: var(--white);
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.scroll-top > *:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}

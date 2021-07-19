@@ -1,0 +1,22 @@
+.sidebar {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 3;
+}
+
+.sidebar > * {
+  color: var(--white);
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.sidebar > *:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
