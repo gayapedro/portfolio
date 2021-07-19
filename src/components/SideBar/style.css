@@ -1,0 +1,16 @@
+.sidebar {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 3;
+}
+
+.sidebar > * {
+  text-decoration: none;
+  color: var(--darker-ksu-purple);
+  cursor: pointer;
+}

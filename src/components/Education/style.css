@@ -1,0 +1,33 @@
+.education-container {
+  padding: 40px;
+}
+
+.education-container h1 {
+  font-size: 60px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.education-items {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 100px;
+}
+
+.education-entry {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.education-entry img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 30px;
+  border: 2px solid var(--medium-aquamarine);
+  box-shadow: rgba(97, 208, 149, 0.4) -3px 3px, rgba(97, 208, 149, 0.3) -6px 6px,
+    rgba(97, 208, 149, 0.2) -9px 9px, rgba(97, 208, 149, 0.1) -12px 12px,
+    rgba(97, 208, 149, 0.05) -15px 15px;
+}

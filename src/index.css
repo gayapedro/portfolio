@@ -6,7 +6,9 @@ body {
   --middle-grey: #96897bff;
   --white: #fefffeff;
   --medium-aquamarine: #61d095ff;
+  --darker-ksu-purple: rgb(55, 28, 124);
   background-color: var(--ksu-purple);
+  color: var(--white);
 }
 
 body > * {

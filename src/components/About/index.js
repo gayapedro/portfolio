@@ -3,7 +3,7 @@ import profilePic from '../../assets/profilepic.JPG';
 
 function About() {
   return (
-    <div className='about-container'>
+    <div id='about' className='about-container'>
       <h1>Sobre mim</h1>
       <div className='about-info'>
         <img src={profilePic} alt='foto de perfil' />
@@ -22,7 +22,7 @@ function About() {
           <p>
             Possuo experiência no desenvolvimento de aplicações front-end
             utilizando HTML5, CSS3 e ReactJS e no desenvolvimento de aplicações
-            back-end utilizando NodeJS, express e postgresql.
+            back-end utilizando NodeJS, ExpressJS e PostgreSQL.
           </p>
         </div>
       </div>
