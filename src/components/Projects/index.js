@@ -20,6 +20,10 @@ function Projects() {
               type: 'Front',
               link: 'https://github.com/gayapedro/cubos-desafio1',
             },
+            {
+              type: 'Back',
+              link: 'http://www.google.com',
+            },
           ]}
           preview='https://gayapedro.github.io/cubos-desafio1/'
         />
