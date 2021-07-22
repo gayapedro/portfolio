@@ -21,6 +21,8 @@ function Contact() {
       body: encode({
         'form-name': 'contact',
         name,
+        email,
+        message,
       }),
     })
       .then(() => alert('Success!'))
@@ -28,7 +30,7 @@ function Contact() {
   };
 
   return (
-    <form name='contact' method='post'>
+    <form name='contact' onSubmit={(e) => handleSubmit(e)}>
       <input type='hidden' name='form-name' value='contact' />
       <p>
         <label>
