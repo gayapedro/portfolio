@@ -17,10 +17,10 @@ function SideBar() {
       <Link to='education' smooth>
         <FontAwesomeIcon icon={faUserGraduate} size='2x' />
       </Link>
-      <Link to='education' smooth>
+      <Link to='projects' smooth>
         <FontAwesomeIcon icon={faLaptopCode} size='2x' />
       </Link>
-      <Link to='education' smooth>
+      <Link to='contact' smooth>
         <FontAwesomeIcon icon={faPaperPlane} size='2x' />
       </Link>
     </div>

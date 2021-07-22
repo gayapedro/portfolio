@@ -1,4 +1,5 @@
 import './style.css';
+import SkillsBar from '../SkillsBar';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
@@ -51,9 +52,7 @@ function Project({
           <img src={image} alt='Preview' />
         </div>
         <div className='skills-project'>
-          {skills.map((item) => (
-            <p key={item}>{item}</p>
-          ))}
+          <SkillsBar skills={skills} />
         </div>
       </div>
       <div className='project-text'>

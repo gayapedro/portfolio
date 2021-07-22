@@ -9,6 +9,8 @@
 }
 
 .projects-list {
-  margin-left: 100px;
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 100px 0 0 100px;
 }
