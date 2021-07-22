@@ -20,9 +20,7 @@ function Contact() {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': 'contact',
-        name: name,
-        email: email,
-        message: message,
+        name,
       }),
     })
       .then(() => alert('Success!'))
