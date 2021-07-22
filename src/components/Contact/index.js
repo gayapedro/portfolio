@@ -28,7 +28,8 @@ function Contact() {
   };
 
   return (
-    <form onSubmit={(e) => handleSubmit(e)}>
+    <form name='contact' method='post'>
+      <input type='hidden' name='form-name' value='contact' />
       <p>
         <label>
           Your Name:{' '}
