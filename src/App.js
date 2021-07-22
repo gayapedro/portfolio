@@ -1,9 +1,10 @@
 import './App.css';
+import SideBar from './components/SideBar';
+import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
 import About from './components/About';
 import Education from './components/Education';
-import SideBar from './components/SideBar';
-import ScrollToTop from './components/ScrollToTop';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <About />
       <Education />
+      <Projects />
     </div>
   );
 }

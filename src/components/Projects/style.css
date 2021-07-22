@@ -1,0 +1,16 @@
+.projects-container {
+  padding: 40px;
+}
+
+.projects-container h1 {
+  font-size: 60px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 100px 0 0 100px;
+}

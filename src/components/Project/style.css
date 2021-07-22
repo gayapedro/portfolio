@@ -1,0 +1,99 @@
+.project {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project p {
+  font-size: 24px;
+  text-align: justify;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.project a {
+  text-decoration: none;
+  color: var(--middle-grey);
+  font-size: 20px;
+}
+
+.project a:hover {
+  color: var(--white);
+  transition: 1s ease;
+}
+
+.project > * {
+  margin: 0;
+}
+
+.project h3 {
+  font-size: 30px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-card .image > img {
+  width: 800px;
+  border-radius: 15px;
+  border: 2px solid var(--medium-aquamarine);
+  box-shadow: rgba(97, 208, 149, 0.4) -3px 3px, rgba(97, 208, 149, 0.3) -6px 6px,
+    rgba(97, 208, 149, 0.2) -9px 9px, rgba(97, 208, 149, 0.1) -12px 12px,
+    rgba(97, 208, 149, 0.05) -15px 15px;
+  height: auto;
+}
+
+.image {
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 12px;
+  margin: 2px;
+  display: hidden;
+  font-size: 0;
+}
+
+.overlay > * {
+  cursor: pointer;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-content: center;
+}
+
+.image > img:hover {
+  z-index: 2;
+}
+
+.project-text {
+  width: 800px;
+}
+
+.project-repositories {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-repositories > * {
+  margin: 0;
+}
+
+.repositories {
+  display: flex;
+  gap: 10px;
+}
