@@ -30,3 +30,12 @@
   font-weight: 400;
   text-align: justify;
 }
+
+@media (max-width: 768px) {
+  .about-info {
+    flex-direction: column;
+  }
+  .about-info img {
+    width: 100%;
+  }
+}

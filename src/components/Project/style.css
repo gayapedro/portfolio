@@ -97,3 +97,17 @@
   display: flex;
   gap: 10px;
 }
+
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .project-card .image > img {
+    width: 100%;
+  }
+
+  .project-text {
+    width: 500px;
+  }
+}
