@@ -1,29 +1,11 @@
 import './style.css';
-import { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
+import TypeIt from 'typeit-react';
 import { CircleFlag } from 'react-circle-flags';
 
 function Header() {
-  const typedElement = useRef(null);
-  const typedInstance = useRef(null);
-
   const handleLanguage = (language) => {
     console.log(`Language changed to ${language}`);
   };
-
-  useEffect(() => {
-    const options = {
-      strings: ['Front-end', 'Back-end', 'Full Stack'],
-      smartBackspace: true,
-      typeSpeed: 100,
-      backSpeed: 90,
-      loop: true,
-      loopCount: Infinity,
-    };
-    typedInstance.current = new Typed(typedElement.current, options);
-
-    return () => typedInstance.current.destroy();
-  }, []);
 
   return (
     <div className='header-container'>
@@ -33,10 +15,28 @@ function Header() {
         eu sou o<br />
         Pedro.
       </h1>
-      <div className='typed-container'>
-        {'Eu sou um Desenvolvedor'}
-        <span className='typed' ref={typedElement}></span>
-      </div>
+      <TypeIt
+        element={'p'}
+        getBeforeInit={(instance) => {
+          instance
+            .type('Eu sou um Desenvolvedor Front-End')
+            .pause(750)
+            .delete(9)
+            .pause(500)
+            .type('Back-end')
+            .pause(750)
+            .delete(8)
+            .pause(500)
+            .type('Full Stack')
+            .pause(1500);
+
+          return instance;
+        }}
+        options={{
+          speed: 100,
+          loop: true,
+        }}
+      />
       <div className='languages'>
         <CircleFlag
           onClick={() => handleLanguage('br')}

@@ -14,20 +14,9 @@
   font-weight: 700;
 }
 
-.typed-container {
-  width: 680px;
-
-  display: flex;
-  gap: 10px;
+.header-container p {
   font-size: 40px;
-  margin-right: 60px;
-  height: 50px;
-  align-items: flex-end;
-  overflow: hidden;
-}
-
-.typed-container span.typed {
-  font-size: 40px;
+  color: white;
 }
 
 .languages {
@@ -40,4 +29,20 @@
 
 .languages > * {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 100vh;
+  }
+  .header-container h1 {
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .languages {
+    right: 0;
+    top: 50px;
+    gap: 20px;
+  }
 }
