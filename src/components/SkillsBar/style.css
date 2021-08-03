@@ -9,3 +9,12 @@
   width: 60px;
   height: auto;
 }
+
+@media (max-width: 414px) {
+  .skills-container {
+    flex-direction: row;
+  }
+  .skills-container img {
+    width: 30px;
+  }
+}

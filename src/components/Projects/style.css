@@ -14,3 +14,9 @@
   gap: 50px;
   margin: 100px 0 0 100px;
 }
+
+@media (max-width: 414px) {
+  .projects-list {
+    margin-left: 0;
+  }
+}

@@ -31,3 +31,9 @@
     rgba(97, 208, 149, 0.2) -9px 9px, rgba(97, 208, 149, 0.1) -12px 12px,
     rgba(97, 208, 149, 0.05) -15px 15px;
 }
+
+@media (max-width: 414px) {
+  .education-items {
+    margin-left: 0;
+  }
+}

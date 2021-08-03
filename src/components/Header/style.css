@@ -46,3 +46,18 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 414px) {
+  .header-container h1 {
+    font-size: 65px;
+  }
+
+  .header-container p {
+    display: none;
+  }
+
+  .languages {
+    top: 20px;
+    right: 20px;
+  }
+}

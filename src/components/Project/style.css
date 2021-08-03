@@ -111,3 +111,17 @@
     width: 500px;
   }
 }
+
+@media (max-width: 414px) {
+  .project-card {
+    width: 100%;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-text {
+    width: 250px;
+  }
+}
