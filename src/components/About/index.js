@@ -25,6 +25,7 @@ function About() {
             back-end utilizando NodeJS, ExpressJS e PostgreSQL.
           </p>
         </div>
+        <button onClick={() => window.open('https://checkout.cubos.academy/checkout?course=dfs', '_parent')}>link</button>
       </div>
     </div>
   );
